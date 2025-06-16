@@ -6,13 +6,13 @@ import seaborn as sns
 
 # Konfigurasi halaman
 st.set_page_config(
-    page_title="Kalkulator Median Interaktif",
+    page_title="Kalkulator Median",
     page_icon="📈",
     layout="centered"
 )
 
 # Judul aplikasi
-st.title("📈 Kalkulator Median Interaktif")
+st.title("📈 Kalkulator Median")
 st.markdown("Masukkan angka-angka yang dipisahkan koma, lalu lihat hasil mediannya dan grafik batang visualisasinya.")
 st.markdown("---")
 
@@ -20,7 +20,7 @@ st.markdown("---")
 warna = st.selectbox("🎨 Pilih Tema Warna Grafik", ["viridis", "rocket", "magma", "coolwarm", "crest", "flare"])
 
 # Input angka
-input_angka = st.text_input("📝 Masukkan angka (pisahkan dengan koma):", "75, 85, 95, 80, 90")
+input_angka = st.text_input("📝 Masukkan angka (pisahkan dengan koma):", "contohnya: 75, 85, 95, 80, 90 (silahkan bisa dihapus")
 
 if st.button("🔍 Hitung Median & Tampilkan Grafik"):
     try:
@@ -60,4 +60,4 @@ if st.button("🔍 Hitung Median & Tampilkan Grafik"):
         st.error(f"❌ Terjadi kesalahan: {e}")
 
 st.markdown("---")
-st.markdown("<center><sub>Dibuat dengan ❤️ oleh Virtual Lab</sub></center>", unsafe_allow_html=True)
+st.markdown("<center><sub>Dibuat Rara Anisa Nabilah </sub></center>", unsafe_allow_html=True)
